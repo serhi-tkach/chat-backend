@@ -59,7 +59,7 @@ app.use(
 	}),
 )
 
-app.use('/api', router)
+app.use('api', router)
 
 const server = new http.Server(app)
 export const io = new Server(server, {
