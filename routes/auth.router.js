@@ -15,8 +15,8 @@ router.get('/logout', logout)
 router.get(
 	'/google/callback',
 	passport.authenticate('google', {
-		failureRedirect: 'http://localhost:5173/login',
-		successRedirect: 'http://localhost:5173/',
+		failureRedirect: 'http://52.59.38.203/login',
+		successRedirect: 'http://52.59.38.203/',
 	}),
 )
 router.get('/check', checkAuth)
