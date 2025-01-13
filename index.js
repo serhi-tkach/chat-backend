@@ -54,7 +54,7 @@ app.use(express.json())
 app.use(cookieParser())
 app.use(
 	cors({
-		origin: 'http://52.59.38.203/',
+		origin: 'http://localhost:5173',
 		credentials: true,
 	}),
 )
@@ -64,7 +64,7 @@ app.use('api', router)
 const server = new http.Server(app)
 export const io = new Server(server, {
 	cors: {
-		origin: 'http://52.59.38.203/',
+		origin: 'http://localhost:5173',
 		methods: ['GET', 'POST'],
 	},
 })
